@@ -119,7 +119,7 @@
 
         mouse {
             bindings = <
-            &bootloader    &trans          &trans          &trans          &trans                                          &tog BASE       &kp LSHIFT      &trans          &trans          &trans
+            &bootloader    &trans          &trans          &trans          &trans                                          &tog BASE       &kp LSHIFT      &trans          &trans          &bootloader
             &trans         &trans          &mkp MB2        &mkp MB1        &kp K_MENU                                      &trans          &trans          &trans          &trans          &trans
             &trans         &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
                                                                            &trans          &trans          &trans          &trans
