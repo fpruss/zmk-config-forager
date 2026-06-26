@@ -92,46 +92,46 @@
 
         base {
             bindings = <
-            &kp B           &kp L           &kp D           &kp W           &kp Z                                           &lt_tp MOUSE SQT  &kp F           &kp O           &kp U           &kp J
-            &lt_tp NUM N    &kp R           &lt_tp SYM T    &lt_tp MOVE S   &kp G                                           &kp Y             &lt_tp MOVE H   &lt_tp SYM A    &kp E           &kp I
-            &kp Q           &kp X           &kp M           &kp C           &kp V                                           &kp K             &kp P           AS(COMMA)       AS(DOT)         AS(FSLH)
-                                                                            &kp SPACE   &sk LSHIFT    &kp LCTRL    &kp LGUI
+            &kp B           &kp L    &kp D          &kp W           &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp MOVE S   &kp G        &kp Y              &lt_tp MOVE H   &lt_tp SYM A   &kp E     &kp I
+            &kp Q           &kp X    &kp M          &kp C           &kp V        &kp K              &kp P           AS(COMMA)      AS(DOT)   AS(FSLH)
+                                                    &kp SPACE       &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
         };
 
         move {
             bindings = <
-            &mkp MB4        &mkp MB5        &kp ESC         &trans          &kp HOME                                          &kp PAGE_UP     &trans          &kp UP          &kp BACKSPACE     &kp DELETE
-            &kp LS(LC(TAB)) &kp LC(TAB)     &kp LG(LEFT)    &kp LG(RIGHT)   &kp END                                           &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT         &kp ENTER
-            &kp LS(TAB)     &kp TAB         &trans          &trans          &kp LS(LC(Y))                                     &trans          &kp MINUS       &kp EQUAL       &trans            &trans
-                                                                            &trans         &trans       &trans          &trans
+            &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans      &kp UP      &kp BACKSPACE   &kp DELETE
+            &kp LS(LC(TAB))   &kp LC(TAB)   &kp LG(LEFT)   &kp LG(RIGHT)   &kp END         &kp PAGE_DOWN   &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
+            &kp LS(TAB)       &kp TAB       &trans         &trans          &kp LS(LC(Y))   &trans          &kp MINUS   &kp EQUAL   &trans          &trans
+                                                           &trans          &trans          &trans          &trans
             >;
         };
 
         num {
             bindings = <
-            &trans          &trans          &trans          &trans        &trans                                          &trans          AS(N7)          AS(N8)          AS(N9)          AS(N0)
-            &trans          &trans          &trans          &trans        &trans                                          &trans          AS(N4)          AS(N5)          AS(N6)          AS(DOT)
-            &trans          &trans          &trans          &trans        &trans                                          &trans          AS(N1)          AS(N2)          AS(N3)          &trans
-                                                                          &trans          &trans          &trans       &trans
+            &trans   &trans   &trans   &trans   &trans   &trans   AS(N7)   AS(N8)   AS(N9)   AS(N0)
+            &trans   &trans   &trans   &trans   &trans   &trans   AS(N4)   AS(N5)   AS(N6)   AS(DOT)
+            &trans   &trans   &trans   &trans   &trans   &trans   AS(N1)   AS(N2)   AS(N3)   &trans
+                                       &trans   &trans   &trans   &trans
             >;
         };
 
         mouse {
             bindings = <
-            &bootloader    &trans          &trans          &trans          &trans                                          &tog BASE       &kp LSHIFT      &trans          &trans          &bootloader
-            &trans         &trans          &mkp MB2        &mkp MB1        &kp K_MENU                                      &trans          &trans          &trans          &trans          &trans
-            &trans         &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
-                                                                           &trans          &trans          &trans          &trans
+            &bootloader   &trans   &trans     &trans     &trans       &tog BASE   &kp LSHIFT   &trans   &trans   &bootloader
+            &trans        &trans   &mkp MB2   &mkp MB1   &kp K_MENU   &trans      &trans       &trans   &trans   &trans
+            &trans        &trans   &trans     &trans     &trans       &trans      &trans       &trans   &trans   &trans
+                                              &trans     &trans       &trans      &trans
             >;
         };
 
         sym {
             bindings = <
-            AS(N1)          AS(N2)          AS(N3)          AS(N4)          AS(N5)                                          AS(N6)             AS(N7)              AS(N8)          AS(N9)             AS(N0)
-            &kp LS(GRAVE)   &trans          &kp MINUS       &kp LS(MINUS)   &trans                                          &kp BACKSLASH      &kp LS(SEMICOLON)   &kp SEMICOLON   &kp LEFT_BRACE     &kp RIGHT_BRACE
-            &kp GRAVE       &trans          &trans          &trans          &trans                                          &kp LS(BACKSLASH)  &kp LS(EQUAL)       &kp EQUAL       &kp LS(LEFT_BRACE) &kp LS(RIGHT_BRACE)
-                                                                            &trans          &trans          &trans          &trans
+            AS(N1)          AS(N2)   AS(N3)      AS(N4)          AS(N5)   AS(N6)              AS(N7)              AS(N8)          AS(N9)               AS(N0)
+            &kp LS(GRAVE)   &trans   &kp MINUS   &kp LS(MINUS)   &trans   &kp BACKSLASH       &kp LS(SEMICOLON)   &kp SEMICOLON   &kp LEFT_BRACE       &kp RIGHT_BRACE
+            &kp GRAVE       &trans   &trans      &trans          &trans   &kp LS(BACKSLASH)   &kp LS(EQUAL)       &kp EQUAL       &kp LS(LEFT_BRACE)   &kp LS(RIGHT_BRACE)
+                                                 &trans          &trans   &trans              &trans
             >;
         };
     };
