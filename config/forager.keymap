@@ -23,33 +23,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-        sabk: shift_to_alt_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp LA(BSPC)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        smart_shift: smart_shift {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&caps_word>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        sym_bspc: left_thumb_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
-            bindings = <&mo>, <&sabk>;
-        };
         lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -85,46 +58,46 @@
 
         base {
             bindings = <
-            &kp B           &kp L    &kp D          &kp W           &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
-            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp MOVE S   &kp G        &kp Y              &lt_tp MOVE H   &lt_tp SYM A   &kp E     &kp I
-            &kp Q           &kp X    &kp M          &kp C           &kp V        &kp K              &kp P           AS(COMMA)      AS(DOT)   AS(FSLH)
-                                                    &kp SPACE       &sk LSHIFT   &kp LCTRL          &kp LGUI
+            &kp B           &kp L    &kp D          &kp W              &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp MOVE S      &kp G        &kp Y              &lt_tp MOVE H   &lt_tp SYM A   &kp E     &kp I
+            &kp Q           &kp X    &kp M          &mt LALT(U) C      &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
+                                                    &mt LALT SPACE     &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
         };
 
         move {
             bindings = <
-            &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans      &kp UP      &kp BACKSPACE   &kp DELETE
-            &kp LS(LC(TAB))   &kp LC(TAB)   &kp LG(LEFT)   &kp LG(RIGHT)   &kp END         &kp PAGE_DOWN   &kp LEFT    &kp DOWN    &kp RIGHT       &kp ENTER
-            &kp LS(TAB)       &kp TAB       &trans         &trans          &kp LS(LC(Y))   &trans          &kp MINUS   &kp EQUAL   &trans          &trans
+            &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans          &kp UP              &kp BACKSPACE   &kp DELETE
+            &kp LS(LC(TAB))   &kp LC(TAB)   &kp LG(LEFT)   &kp LG(RIGHT)   &kp END         &kp PAGE_DOWN   &kp LEFT        &kp DOWN            &kp RIGHT       &kp ENTER
+            &kp LS(TAB)       &kp TAB       &trans         &k0 LS(LC(C))   &kp LS(LC(V))   &trans          &kp LG(MINUS)   &kp LS(LG(EQUAL))   &trans          &trans
                                                            &trans          &trans          &trans          &trans
             >;
         };
 
         num {
             bindings = <
-            &trans   &trans   &trans   &trans   &trans   &trans   AS(N7)   AS(N8)   AS(N9)   AS(N0)
-            &trans   &trans   &trans   &trans   &trans   &trans   AS(N4)   AS(N5)   AS(N6)   AS(DOT)
-            &trans   &trans   &trans   &trans   &trans   &trans   AS(N1)   AS(N2)   AS(N3)   &trans
+            &trans   &trans   &trans   &trans   &trans   &trans   &kp N7   &kp N8   &kp N9   &kp N0
+            &trans   &trans   &trans   &trans   &trans   &trans   &kp N4   &kp N5   &kp N6   &kp DOT
+            &trans   &trans   &trans   &trans   &trans   &trans   &kp N1   &kp N2   &kp N3   &trans
                                        &trans   &trans   &trans   &trans
             >;
         };
 
         mouse {
             bindings = <
-            &bootloader   &trans   &trans     &trans     &trans       &trans      &kp LSHIFT   &trans   &trans   &bootloader
-            &trans        &trans   &mkp MB2   &mkp MB1   &kp K_MENU   &trans      &trans       &trans   &trans   &trans
-            &trans        &trans   &trans     &trans     &trans       &trans      &trans       &trans   &trans   &trans
-                                              &trans     &trans       &trans      &trans
+            &bootloader   &trans       &trans           &trans            &trans           &trans      &trans       &trans   &trans   &bootloader
+            &trans        &kp K_MENU   &mkp MB2         &mkp MB1          &msc SCRL_UP     &trans      &trans       &trans   &trans   &trans
+            &trans        &trans       &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN   &trans      &trans       &trans   &trans   &trans
+                                                        &trans            &trans           &trans      &trans
             >;
         };
 
         sym {
             bindings = <
-            AS(N1)          AS(N2)   AS(N3)      AS(N4)          AS(N5)   AS(N6)              AS(N7)              AS(N8)          AS(N9)               AS(N0)
-            &kp LS(GRAVE)   &trans   &kp MINUS   &kp LS(MINUS)   &trans   &kp BACKSLASH       &kp LS(SEMICOLON)   &kp SEMICOLON   &kp LEFT_BRACE       &kp RIGHT_BRACE
-            &kp GRAVE       &trans   &trans      &trans          &trans   &kp LS(BACKSLASH)   &kp LS(EQUAL)       &kp EQUAL       &kp LS(LEFT_BRACE)   &kp LS(RIGHT_BRACE)
-                                                 &trans          &trans   &trans              &trans
+            &kp LS(N1)      &kp LS(N2)   &kp LS(N3)   &kp LS(N4)      &kp LS(N5)   &kp LS(N6)          &kp LS(N7)          &kp LS(N8)      &kp LEFT_BRACKET          &kp RIGHT_BRACKET
+            &kp LS(GRAVE)   &trans       &kp MINUS    &kp LS(EQUAL)   &trans       &kp BACKSLASH       &kp LS(SEMICOLON)   &kp SEMICOLON   &kp KP_LEFT_PARENTHESIS   &kp KP_RIGHT_PARENTHESIS
+            &kp GRAVE       &trans       &trans       &trans          &trans       &kp LS(BACKSLASH)   &kp LS(MINUS)       &kp EQUAL       &kp LEFT_BRACE            &kp RIGHT_BRACE
+                                                      &trans          &trans       &trans              &trans
             >;
         };
     };
