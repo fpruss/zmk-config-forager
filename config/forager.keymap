@@ -59,7 +59,7 @@
         base {
             bindings = <
             &kp B           &kp L    &kp D          &kp W              &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
-            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S      &kp G        &kp Y              &lt_tp NAV H   &lt_tp SYM A   &kp E     &kp I
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S       &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
             &kp Q           &kp X    &kp M          &mt LALT(U) C      &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
                                                     &mt LALT SPACE     &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
@@ -88,7 +88,7 @@
             &bt BT_CLR_ALL   &trans       &trans           &trans            &trans           &trans      &trans       &trans   &trans   &trans
             &trans           &kp K_MENU   &mkp MB2         &mkp MB1          &msc SCRL_UP     &trans      &trans       &trans   &trans   &trans
             &trans           &trans       &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN   &trans      &trans       &trans   &trans   &trans
-                                                        &trans            &trans           &trans      &trans
+                                                           &trans            &trans           &trans      &trans
             >;
         };
 
