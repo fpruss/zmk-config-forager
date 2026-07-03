@@ -14,6 +14,19 @@
 #define MEH LS(LC(LALT))
 
 / {
+    macros {
+        alt_u: alt_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U)>;
+        };
+
+        c_key: c_key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C>;
+        };
+    };
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -51,6 +64,14 @@
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
+        custom_ht: custom_ht {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&alt_u &c_key>;
+        };
     };
 
     keymap {
@@ -58,10 +79,10 @@
 
         base {
             bindings = <
-            &kp B           &kp L    &kp D          &kp W              &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
-            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S       &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
-            &kp Q           &kp X    &kp M          &mt LALT(U) C      &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
-                                                    &mt LALT SPACE     &sk LSHIFT   &kp LCTRL          &kp LGUI
+            &kp B           &kp L    &kp D          &kp W                  &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S           &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
+            &kp Q           &kp X    &kp M          &custom_ht LALT(U) C   &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
+                                                    &mt LALT SPACE         &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
         };
 
