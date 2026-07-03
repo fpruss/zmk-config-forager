@@ -85,9 +85,9 @@
 
         mouse {
             bindings = <
-            &bootloader   &trans       &trans           &trans            &trans           &trans      &trans       &trans   &trans   &bootloader
-            &trans        &kp K_MENU   &mkp MB2         &mkp MB1          &msc SCRL_UP     &trans      &trans       &trans   &trans   &trans
-            &trans        &trans       &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN   &trans      &trans       &trans   &trans   &trans
+            &kp BT_CLR_ALL   &trans       &trans           &trans            &trans           &trans      &trans       &trans   &trans   &trans
+            &trans           &kp K_MENU   &mkp MB2         &mkp MB1          &msc SCRL_UP     &trans      &trans       &trans   &trans   &trans
+            &trans           &trans       &msc SCRL_LEFT   &msc SCRL_RIGHT   &msc SCRL_DOWN   &trans      &trans       &trans   &trans   &trans
                                                         &trans            &trans           &trans      &trans
             >;
         };
