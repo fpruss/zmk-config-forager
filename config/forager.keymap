@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE  0
-#define MOVE  1
+#define NAV  1
 #define NUM   2
 #define MOUSE 3
 #define SYM   4
@@ -59,13 +59,13 @@
         base {
             bindings = <
             &kp B           &kp L    &kp D          &kp W              &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
-            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp MOVE S      &kp G        &kp Y              &lt_tp MOVE H   &lt_tp SYM A   &kp E     &kp I
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S      &kp G        &kp Y              &lt_tp NAV H   &lt_tp SYM A   &kp E     &kp I
             &kp Q           &kp X    &kp M          &mt LALT(U) C      &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
                                                     &mt LALT SPACE     &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
         };
 
-        move {
+        nav {
             bindings = <
             &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans          &kp UP              &kp BACKSPACE   &kp DELETE
             &kp LS(LC(TAB))   &kp LC(TAB)   &kp LG(LEFT)   &kp LG(RIGHT)   &kp END         &kp PAGE_DOWN   &kp LEFT        &kp DOWN            &kp RIGHT       &kp ENTER
