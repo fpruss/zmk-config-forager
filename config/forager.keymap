@@ -105,7 +105,7 @@
         twm {
             bindings = <
             &kp MEH(LEFT_BRACKET)     &kp MEH(RIGHT_BRACKET)     &kp MEH(LEFT)   &kp MEH(RIGHT)   &kp MEH(SEMICOLON)   &trans   &kp MEH(N7)   &kp MEH(N8)   &kp MEH(N9)   &trans
-            &kp HYPER(LEFT_BRACKET)   &kp HYPER(RIGHT_BRACKET)   &kp (T)         &kp MEH(F)       &kp HYPER(X)         &trans   &kp MEH(N4)   &kp MEH(N5)   &kp MEH(N6)   &trans
+            &kp HYPER(LEFT_BRACKET)   &kp HYPER(RIGHT_BRACKET)   &kp MEH(T)         &kp MEH(F)       &kp HYPER(X)         &trans   &kp MEH(N4)   &kp MEH(N5)   &kp MEH(N6)   &trans
             &kp MEH(H)                &kp MEH(L)                 &kp HYPER(H)    &kp HYPER(L)     &kp HYPER(Y)         &trans   &kp MEH(N1)   &kp MEH(N2)   &kp MEH(N3)   &kp HYPER(ENTER)d
                                                                                  &kp MEH(EQUAL)   &kp MEH(MINUS)       &trans   &trans
             >;
