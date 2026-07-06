@@ -59,10 +59,10 @@
 
         base {
             bindings = <
-            &kp B           &kp L    &kp D          &kp W            &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
-            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S     &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
-            &kp Q           &kp X    &kp M          &mt LALT C       &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
-                                                    &mt LALT SPACE   &sk LSHIFT   &kp LCTRL          &kp LGUI
+            &kp B           &kp L    &kp D          &kp W              &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S       &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
+            &kp Q           &kp X    &kp M          &mt LALT C         &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
+                                                    &lt_tp TWM SPACE   &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
         };
 
@@ -106,7 +106,7 @@
             bindings = <
             &kp MEH(LEFT_BRACKET)     &kp MEH(RIGHT_BRACKET)     &kp MEH(LEFT)   &kp MEH(RIGHT)   &kp MEH(SEMICOLON)   &trans   &kp MEH(N7)   &kp MEH(N8)   &kp MEH(N9)   &trans
             &kp HYPER(LEFT_BRACKET)   &kp HYPER(RIGHT_BRACKET)   &kp (T)         &kp MEH(F)       &kp HYPER(X)         &trans   &kp MEH(N4)   &kp MEH(N5)   &kp MEH(N6)   &trans
-            &kp MEH(H)                &kp MEH(L)                 &kp HYPER(H)    &kp HYPER(L)     &kp HYPER(Y)         &trans   &kp MEH(N1)   &kp MEH(N2)   &kp MEH(N3)   &kp HYPER(ENTER)
+            &kp MEH(H)                &kp MEH(L)                 &kp HYPER(H)    &kp HYPER(L)     &kp HYPER(Y)         &trans   &kp MEH(N1)   &kp MEH(N2)   &kp MEH(N3)   &kp HYPER(ENTER)d
                                                                                  &kp MEH(EQUAL)   &kp MEH(MINUS)       &trans   &trans
             >;
         };
