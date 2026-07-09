@@ -12,7 +12,8 @@
 #define TWM   5
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
-#define MEH LS(LC(LALT))
+#define MEH(keycode)   LS(LC(LA(keycode)))
+#define HYPER(keycode) LS(LC(LA(LG(keycode))))
 
 / {
     behaviors {
