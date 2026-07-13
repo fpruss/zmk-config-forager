@@ -71,7 +71,7 @@
             bindings = <
             &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans          &kp UP              &kp BACKSPACE   &kp DELETE
             &kp LS(LC(TAB))   &kp LC(TAB)   &kp LG(LEFT)   &kp LG(RIGHT)   &kp END         &kp PAGE_DOWN   &kp LEFT        &kp DOWN            &kp RIGHT       &kp ENTER
-            &kp LS(TAB)       &kp TAB       &trans         &kp LS(LC(C))   &kp LS(LC(V))   &trans          &kp LG(MINUS)   &kp LS(LG(EQUAL))   &kp C_VOL_UP    &kp C_VOL_UP
+            &kp LS(TAB)       &kp TAB       &trans         &kp LS(LC(C))   &kp LS(LC(V))   &trans          &kp LG(MINUS)   &kp LS(LG(EQUAL))   &kp C_VOL_DN    &kp C_VOL_UP
                                                            &kp LALT        &trans          &trans          &trans
             >;
         };
