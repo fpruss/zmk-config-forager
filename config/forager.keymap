@@ -95,10 +95,10 @@
         };
 
         sym {
-            bindings = <
-            &kp LS(N1)      &kp LS(N2)   &kp LS(N3)   &kp LS(N4)      &kp LS(N5)   &kp LS(N6)          &kp LS(N7)          &kp LS(N8)      &kp LEFT_BRACKET          &kp RIGHT_BRACKET
-            &kp LS(GRAVE)   &trans       &kp MINUS    &kp LS(EQUAL)   &trans       &kp BACKSLASH       &kp LS(SEMICOLON)   &kp SEMICOLON   &kp KP_LEFT_PARENTHESIS   &kp KP_RIGHT_PARENTHESIS
-            &kp GRAVE       &trans       &trans       &trans          &trans       &kp LS(BACKSLASH)   &kp LS(MINUS)       &kp EQUAL       &kp LEFT_BRACE            &kp RIGHT_BRACE
+            bindings = <f
+            &kp LS(N1)      &kp LS(N2)   &kp LS(N3)   &kp LS(N4)      &kp LS(N5)   &kp LS(N6)          &kp LS(N7)          &kp LS(N8)      &kp LEFT_BRACKET       &kp RIGHT_BRACKET
+            &kp LS(GRAVE)   &trans       &kp MINUS    &kp LS(EQUAL)   &trans       &kp BACKSLASH       &kp LS(SEMICOLON)   &kp SEMICOLON   &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS
+            &kp GRAVE       &trans       &trans       &trans          &trans       &kp LS(BACKSLASH)   &kp LS(MINUS)       &kp EQUAL       &kp LEFT_BRACE         &kp RIGHT_BRACE
                                                       &trans          &trans       &trans              &trans
             >;
         };
