@@ -42,6 +42,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
             bindings = <&mo>, <&kp>;
         };
         lt_spc: layer_tap_space {
@@ -120,6 +121,7 @@
 };
 
 &mt {
+    require-prior-idle-ms = <150>;
     quick-tap-ms = <200>;
 };
 
