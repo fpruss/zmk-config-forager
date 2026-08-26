@@ -44,6 +44,14 @@
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
+        lt_spc: layer_tap_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
@@ -51,10 +59,10 @@
 
         base {
             bindings = <
-            &kp B           &kp L    &kp D          &kp W              &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
-            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S       &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
-            &kp Q           &kp X    &kp M          &mt LALT C         &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
-                                                    &lt_tp TWM SPACE   &sk LSHIFT   &kp LCTRL          &kp LGUI
+            &kp B           &kp L    &kp D          &kp W               &kp Z        &lt_tp MOUSE SQT   &kp F           &kp O          &kp U     &kp J
+            &lt_tp NUM N    &kp R    &lt_tp SYM T   &lt_tp NAV S        &kp G        &kp Y              &lt_tp NAV H    &lt_tp SYM A   &kp E     &kp I
+            &kp Q           &kp X    &kp M          &mt LALT C          &kp V        &kp K              &kp P           &kp COMMA      &kp DOT   &kp FSLH
+                                                    &lt_spc TWM SPACE   &sk LSHIFT   &kp LCTRL          &kp LGUI
             >;
         };
 
