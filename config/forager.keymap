@@ -11,20 +11,11 @@
 #define SYM   4
 #define TWM   5
 
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define MEH(keycode)   LS(LC(LA(keycode)))
 #define HYPER(keycode) LS(LC(LA(LG(keycode))))
 
 / {
     behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            require-prior-idle-ms = <100>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
         lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
