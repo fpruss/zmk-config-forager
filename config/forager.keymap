@@ -53,11 +53,6 @@
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
-        &msc {
-            delay-ms = <0>;
-            acceleration-exponent = <0>;   // constant speed, no ramp
-            time-to-max-speed-ms = <0>;    // full speed immediately
-        };
     };
 
     keymap {
@@ -117,6 +112,11 @@
             >;
         };
     };
+};
+&msc {
+    delay-ms = <0>;
+    acceleration-exponent = <0>;   // constant speed, no ramp
+    time-to-max-speed-ms = <0>;    // full speed immediately
 };
 
 &lt {
