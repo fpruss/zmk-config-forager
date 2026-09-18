@@ -88,8 +88,8 @@
         mouse {
             bindings = <
             &bt BT_CLR_ALL   &trans       &trans              &trans             &trans              &trans      &trans       &trans   &trans   &trans
-            &trans           &kp K_MENU   &mkp MB2            &mkp MB1           &msc MOVE_Y(400)    &trans      &trans       &trans   &trans   &trans
-            &trans           &trans       &msc MOVE_X(-400)   &msc MOVE_X(400)   &msc MOVE_Y(-400)   &trans      &trans       &trans   &trans   &trans
+            &trans           &kp K_MENU   &mkp MB2            &mkp MB1           &msc MOVE_Y(200)    &trans      &trans       &trans   &trans   &trans
+            &trans           &trans       &msc MOVE_X(-200)   &msc MOVE_X(200)   &msc MOVE_Y(-200)   &trans      &trans       &trans   &trans   &trans
                                                               &trans             &trans              &trans      &trans
             >;
         };
@@ -116,7 +116,7 @@
 &msc {
     delay-ms = <0>;
     acceleration-exponent = <1>;
-    time-to-max-speed-ms = <200>;
+    time-to-max-speed-ms = <300>;
 };
 
 &lt {
