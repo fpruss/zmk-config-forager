@@ -69,10 +69,10 @@
 
         nav {
             bindings = <
-            &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans          &kp UP              &kp BACKSPACE   &kp DELETE
+            &mkp MB4          &mkp MB5      &kp ESC        &trans          &kp HOME        &kp PAGE_UP     &trans          &kp UP              &trans          &trans
             &kp LS(LC(TAB))   &kp LC(TAB)   &kp LG(LEFT)   &kp LG(RIGHT)   &kp END         &kp PAGE_DOWN   &kp LEFT        &kp DOWN            &kp RIGHT       &kp ENTER
             &kp LS(TAB)       &kp TAB       &trans         &kp LS(LC(C))   &kp LS(LC(V))   &trans          &kp LG(MINUS)   &kp LS(LG(EQUAL))   &kp C_VOL_DN    &kp C_VOL_UP
-                                                           &kp LALT        &trans          &trans          &trans
+                                                           &kp LALT        &trans          &kp DELETE      &kp BACKSPACE
             >;
         };
 
@@ -87,10 +87,10 @@
 
         mouse {
             bindings = <
-            &bt BT_CLR_ALL   &trans       &trans               &trans              &trans               &trans      &trans       &trans   &trans   &trans
-            &trans           &kp K_MENU   &mkp MB2             &mkp MB1            &msc MOVE_Y(1200)    &trans      &trans       &trans   &trans   &trans
-            &trans           &trans       &msc MOVE_X(-1200)   &msc MOVE_X(1200)   &msc MOVE_Y(-1200)   &trans      &trans       &trans   &trans   &trans
-                                                               &trans              &trans               &trans      &trans
+            &bt BT_CLR_ALL   &trans       &trans              &trans             &trans              &trans      &trans       &trans   &trans   &trans
+            &trans           &kp K_MENU   &mkp MB2            &mkp MB1           &msc MOVE_Y(400)    &trans      &trans       &trans   &trans   &trans
+            &trans           &trans       &msc MOVE_X(-400)   &msc MOVE_X(400)   &msc MOVE_Y(-400)   &trans      &trans       &trans   &trans   &trans
+                                                              &trans             &trans              &trans      &trans
             >;
         };
 
@@ -115,8 +115,8 @@
 };
 &msc {
     delay-ms = <0>;
-    acceleration-exponent = <0>;   // constant speed, no ramp
-    time-to-max-speed-ms = <0>;    // full speed immediately
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <200>;
 };
 
 &lt {
